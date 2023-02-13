@@ -200,6 +200,7 @@ return [
          * Custom providers...
          */
         App\Providers\CurrencyServiceProvider::class,
+        App\Providers\ExchangeServiceProvider::class,
 
     ],
 
