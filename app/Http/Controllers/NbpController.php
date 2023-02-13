@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Services\CurrencyService;
+use App\Services\ExchangeServiceInterface;
 
 class NbpController extends Controller
 {
-    public function updateExchanges()
+    public function updateExchanges(ExchangeServiceInterface $service)
     {
 
-        return 'OK';
+        return $service->loadExchange();
     }
 }
 
